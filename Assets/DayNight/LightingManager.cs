@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor.AnimatedValues;
 using UnityEngine;
 
 [ExecuteAlways]

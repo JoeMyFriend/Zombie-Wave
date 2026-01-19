@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrossHairTarget : MonoBehaviour
 {
-    Camera camera;
+    Camera cam;
     Ray ray;
     RaycastHit hitInfo;
     public Transform crossHairTargetEmpty;
@@ -12,14 +12,14 @@ public class CrossHairTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camera = Camera.main;
+        cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        ray.origin = camera.transform.position;
-        ray.direction = camera.transform.forward;
+        ray.origin = cam.transform.position;
+        ray.direction = cam.transform.forward;
         if(Physics.Raycast(ray, out hitInfo))
         {
             transform.position = hitInfo.point;

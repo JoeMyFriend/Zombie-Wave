@@ -15,3 +15,4 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: bb0b66c253f617149bd86ce1b06ca925
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
